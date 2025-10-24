@@ -1,94 +1,47 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <script src="/assets/google_tag_manager-f5c7cd7e5ba0d949ed0c6be2a2eb0042e1a647e61df804f855e94df886557380.js"></script>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc." />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Webhook Form</title>
+  <style>
+    /* tiny readable form styles — remove if you don't want them */
+    body { font-family: Arial, Helvetica, sans-serif; padding: 20px; }
+    form { max-width: 420px; margin: 0 auto; }
+    label { display:block; margin-bottom:6px; font-weight:600; }
+    input[type="text"], input[type="number"], input[type="date"] {
+      width:100%; padding:8px; margin-bottom:14px; box-sizing:border-box;
+    }
+    button { padding:10px 14px; cursor:pointer; }
+    .note { font-size:0.9rem; color:#555; margin-top:8px; }
+  </style>
+</head>
+<body>
 
-    <!-- Theme CSS -->
-    <link rel="stylesheet" href="/assets/dashkit-9e80d37e1dd452d710fd78450dc909d7ef13f881d9def6da1fb28caaec3da8fe.css" media="all" />
-
-    <!-- MAIN JS -->
-    <script src="/assets/application-a5f95fcf5a61a46934902c4b5c08433f5e7f3167b25ab3c854c4d61cf9fd49b7.js" data-turbo-track="reload"></script>
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/monaco-editor@0.46.0/min/vs/editor/editor.main.css" />
-
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-     crossorigin=""/>
-
-    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JRHPHD470"></script>
-
-    <script src="https://js.stripe.com/v3/" type="text/javascript"></script>
-
-    <style>
-    @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
-</style>
-
-    <link href="https://unpkg.com/survey-core/survey-core.min.css" media="all" rel="stylesheet" /><link href="https://unpkg.com/survey-creator-core/survey-creator-core.min.css" media="all" rel="stylesheet" />
-
-
-      <!-- Microsoft Ads -->
-      <script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"97105240", enableAutoSpaTracking: true};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script>
-
-      <script>
-        window.uetq = window.uetq || [];
-        window.uetq.push('set', { 'pid': {
-            'em': "nicolazgentile@gmail.com",
-        } });
-      </script>
-
-    <!-- Favicon -->
-    <link rel="icon" href="/assets/favicon-2feb1d6a0d5241da50e0c6ce377835be3b6f3be7dec80a40a074f1a20d32d165.png" type="image/png">
-
-
-    <!-- Title -->
-      <title>Form Studio - Basin</title>
-
-    <meta name="csrf-param" content="authenticity_token" />
-<meta name="csrf-token" content="ozLX8cy0zjrg9STtOEDPhMzVYvU7X17SH0W5fm4KBkCk4xsg7_vhbv_BlBFq1zNlEk61v4-IgZE5Q04lL_h1rw" />
-
-      <!-- Start VWO Async SmartCode -->
-  <link rel="preconnect" href="https://dev.visualwebsiteoptimizer.com" />
-  <script type='text/javascript' id='vwoCode'>
-  window._vwo_code || (function() {
-  var account_id=830842,
-  version=2.0,
-  settings_tolerance=2000,
-  hide_element='body',
-  hide_element_style = 'opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important',
-  /* DO NOT EDIT BELOW THIS LINE */
-  f=false,w=window,d=document,v=d.querySelector('#vwoCode'),cK='_vwo_'+account_id+'_settings',cc={};try{var c=JSON.parse(localStorage.getItem('_vwo_'+account_id+'_config'));cc=c&&typeof c==='object'?c:{}}catch(e){}var stT=cc.stT==='session'?w.sessionStorage:w.localStorage;code={use_existing_jquery:function(){return typeof use_existing_jquery!=='undefined'?use_existing_jquery:undefined},library_tolerance:function(){return typeof library_tolerance!=='undefined'?library_tolerance:undefined},settings_tolerance:function(){return cc.sT||settings_tolerance},hide_element_style:function(){return'{'+(cc.hES||hide_element_style)+'}'},hide_element:function(){return typeof cc.hE==='string'?cc.hE:hide_element},getVersion:function(){return version},finish:function(){if(!f){f=true;var e=d.getElementById('_vis_opt_path_hides');if(e)e.parentNode.removeChild(e)}},finished:function(){return f},load:function(e){var t=this.getSettings(),n=d.createElement('script'),i=this;if(t){n.textContent=t;d.getElementsByTagName('head')[0].appendChild(n);if(!w.VWO||VWO.caE){stT.removeItem(cK);i.load(e)}}else{n.fetchPriority='high';n.src=e;n.type='text/javascript';n.onerror=function(){_vwo_code.finish()};d.getElementsByTagName('head')[0].appendChild(n)}},getSettings:function(){try{var e=stT.getItem(cK);if(!e){return}e=JSON.parse(e);if(Date.now()>e.e){stT.removeItem(cK);return}return e.s}catch(e){return}},init:function(){if(d.URL.indexOf('__vwo_disable__')>-1)return;var e=this.settings_tolerance();w._vwo_settings_timer=setTimeout(function(){_vwo_code.finish();stT.removeItem(cK)},e);var t=d.currentScript,n=d.createElement('style'),i=this.hide_element(),r=t&&!t.async&&i?i+this.hide_element_style():'',c=d.getElementsByTagName('head')[0];n.setAttribute('id','_vis_opt_path_hides');v&&n.setAttribute('nonce',v.nonce);n.setAttribute('type','text/css');if(n.styleSheet)n.styleSheet.cssText=r;else n.appendChild(d.createTextNode(r));c.appendChild(n);this.load('https://dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&vn='+version)}};w._vwo_code=code;code.init();})();
-  </script>
-  <!-- End VWO Async SmartCode -->
-
-  </head>
-  <body data-sha256-email-address="06973a48f5abb2866078cda7d937b2f0ca55cbd1e77ef4f16f29671bcb416280">
-
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MF5HQ2W"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
-
-      <!-- Do nothing -->
-
-
-    <turbo-frame id="flash">
-      <div class="container"><a data-turbo="false" href="/app/plans"><div class="alert alert-shadow alert-dismissible fade show alert alert-primary" role="alert"><span class="alert-inner--icon mr-2"><i class="fe fe-gift"></i></span><span class="alert-inner--text"><strong>You&#39;ve got 13 days left to enjoy all of Basin&#39;s premium features on us. Loving it? Click here to keep the good times rolling after your trial wraps up!</strong></span><button aria-label="Close" class="close" data-dismiss="alert" type="button"><span aria-hidden="true">&times;</span></button></div></a></div>
-    </turbo-frame>
-
-    <div class="main-content pb-5">
-      <div class="header mb-0 px-5"><div class="header-body no-bottom-border"><div class="row d-flex align-items-center"><div class="col d-inline-flex"><nav aria-label="breadcrumb"><ol class="breadcrumb" style="font-family: &#39;Filson Pro&#39;, sans-serif; font-weight: 700;"><li class="breadcrumb-item"><a href="/app/forms/60289/submissions">test5</a></li><li aria-current="page" class="breadcrumb-item text-dark">Basin Form Studio</li></ol></nav></div></div></div></div><div class="content"><div class="row"><div class="col"><div class="px-5" data-controller="survey-builder" data-survey-builder-form-id-value="60289" data-survey-builder-form-uuid-value="473325f2ef8c" data-survey-builder-hosted-form-id-value="513" data-survey-builder-hosted-form-uuid-value="0a4de33b6f86" data-survey-builder-survey-json-value="{&quot;pages&quot;:[{&quot;name&quot;:&quot;page1&quot;,&quot;elements&quot;:[{&quot;name&quot;:&quot;question1&quot;,&quot;type&quot;:&quot;text&quot;,&quot;title&quot;:&quot;Nombre&quot;},{&quot;name&quot;:&quot;question2&quot;,&quot;type&quot;:&quot;text&quot;,&quot;title&quot;:&quot;Edad&quot;,&quot;inputType&quot;:&quot;number&quot;},{&quot;name&quot;:&quot;question3&quot;,&quot;type&quot;:&quot;text&quot;,&quot;title&quot;:&quot;Fecha&quot;,&quot;inputType&quot;:&quot;date&quot;}]}]}" data-survey-builder-theme-json-value="{}"><div id="surveyCreator" style="height: calc(100vh - 120px);"></div></div></div></div></div>
+  <form id="webhookForm"
+        action="https://nicolazgentile.app.n8n.cloud/webhook-test/send-message"
+        method="post"
+        accept-charset="utf-8">
+    <div>
+      <label for="fullname">Fullname <span aria-hidden="true">*</span></label>
+      <input id="fullname" name="fullname" type="text" required autocomplete="name" />
     </div>
 
+    <div>
+      <label for="cel_number">Cel. Number <span aria-hidden="true">*</span></label>
+      <!-- using number since you requested it; if you need + or spaces use type="tel" -->
+      <input id="cel_number" name="cel_number" type="number" required inputmode="numeric" />
+    </div>
 
-    <!-- Hostname: clownfish -->
-  </body>
+    <div>
+      <label for="checkin">Check-in (optional)</label>
+      <input id="checkin" name="checkin" type="date" />
+    </div>
+
+    <button type="submit">Send</button>
+
+    <p class="note">This will POST form data as application/x-www-form-urlencoded to the webhook URL.</p>
+  </form>
+
+</body>
 </html>
