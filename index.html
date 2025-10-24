@@ -8,7 +8,7 @@
     body { font-family: Arial, sans-serif; padding: 20px; }
     form { max-width: 420px; margin: 0 auto; }
     label { display:block; margin-bottom:6px; font-weight:600; }
-    input[type="text"], input[type="number"], input[type="date"] {
+    input[type="text"], input[type="number"], input[type="date"] , input[type="email"], input[type="cel"]  {
       width:100%; padding:8px; margin-bottom:14px; box-sizing:border-box;
     }
     button { padding:10px 14px; cursor:pointer; }
@@ -30,12 +30,7 @@
 
     <div>
       <label for="cel_number">Cel. Number <span aria-hidden="true">*</span></label>
-      <input id="cel_number" name="cel_number" type="tel" required inputmode="numeric" pattern="[0-9+ ]{6,15}" />
-    </div>
-
-    <div>
-      <label for="cel_number">e-mail <span aria-hidden="true">*</span></label>
-      <input id="email" name="email" type="email" placeholder="example@gmail.com" autocomplete="email" />
+      <input id="cel_number" name="cel_number" type="cel" required inputmode="numeric" pattern="[0-9+ ]{6,15}" />
     </div>
 
     <div>
@@ -51,6 +46,11 @@
     <div>
       <label for="checkout">Check-out (optional)</label>
       <input id="checkout" name="checkout" type="date" required />
+    </div>
+
+    <div>
+      <label for="cel_number">e-mail <span aria-hidden="true">*</span></label>
+      <input id="email" name="email" type="email" placeholder="example@gmail.com" autocomplete="email" />
     </div>
 
     <button type="submit">Registrar</button>
