@@ -21,7 +21,9 @@
   <form id="webhookForm"
         action="https://nicolazgentile.app.n8n.cloud/webhook-test/send-message"
         method="post"
-        accept-charset="utf-8">
+        accept-charset="utf-8"
+        target="_self"
+        onsubmit="setTimeout(() => window.location.href='sent_page.html', 500);">
 
     <div>
       <label for="fullname">Fullname <span aria-hidden="true">*</span></label>
