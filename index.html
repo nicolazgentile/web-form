@@ -62,32 +62,38 @@
 
     <div>
 
-    <h3>Solo para empresas (optional)</h3>
-    <hr>
-    <div style="
-      display: grid;
-      grid-template-columns: 1fr 1.5fr;
-      gap: 12px;
-      align-items: end;
-    ">
-      <div>
-        <label for="es_empresa">Es empresa<span aria-hidden="true">*</span></label>
-        <select id="es_empresa" name="es_empresa" style="width:100%; padding:8px;">
-          <option>NO</option>
-          <option>SI</option>
-        </select>
-      </div>
-  
-      <div>
-        <label for="company_email">Company email</label>
-        <input id="company_email" name="company_email" type="email" placeholder="empresa@dominio.com"
-          style="width:100%; padding:8px;"
-        />
+    <div>
+      <h3>Solo para empresas (optional)</h3>
+      <hr>
+    
+      <div style="
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        gap: 12px;
+        align-items: end;
+      ">
+        <div>
+          <label for="es_empresa">Es empresa<span aria-hidden="true">*</span></label>
+          <select id="es_empresa" name="es_empresa" style="width:100%; padding:8px;">
+            <option>NO</option>
+            <option>SI</option>
+          </select>
+        </div>
+    
+        <div>
+          <label for="company_email">Company email</label>
+          <input
+            id="company_email"
+            name="company_email"
+            type="email"
+            placeholder="empresa@dominio.com"
+            style="width:100%; padding:8px;"
+          />
+        </div>
       </div>
     </div>
-  </div>
 
-  <hr>
+    <hr>
     <button type="submit">Registrar</button>
 
     <p class="note">Exclusively made for Giuseppe and my bro'</p>
