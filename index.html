@@ -36,23 +36,38 @@
     </div>
 
     <div>
-      <label for="nro_ocupantes">Nro. Ocupantes <span aria-hidden="true">*</span></label>
+      <label for="nro_ocupantes">Nro. Ocupantes</label>
       <input id="nro_ocupantes" name="nro_ocupantes" type="number" required min="1" max="20" />
     </div>
 
     <div>
-      <label for="checkin">Check-in (optional)</label>
+      <label for="checkin">Check-in</label>
       <input id="checkin" name="checkin" type="date" required />
     </div>
 
     <div>
-      <label for="checkout">Check-out (optional)</label>
+      <label for="checkout">Check-out</label>
       <input id="checkout" name="checkout" type="date" required />
     </div>
 
     <div>
-      <label for="cel_number">e-mail <span aria-hidden="true">*</span></label>
-      <input id="email" name="email" type="email" placeholder="example@gmail.com" autocomplete="email" />
+      <label for="email">e-mail (optional)<span aria-hidden="true">*</span></label>
+      <input id="email" name="email" type="email" placeholder="example@gmail.com" autocomplete="email"/>
+    </div>
+
+    <div>
+      <label for="dni_cuit">DNI/CUIT/CUIL (optional)<span aria-hidden="true">*</span></label>
+      <input id="dni_cuit" name="dni_cuit" type="email" placeholder="" autocomplete="cuil" />
+    </div>
+
+    <div>
+      <h3>Solo para empresas</h3>
+      <hr>
+      <label for="es_empresa">Es empresa<span aria-hidden="true">*</span></label>
+      <select id="es_empresa" name="es_empresa" class="form-control">
+          <option>NO</option>
+          <option>SI</option>
+      </select>
     </div>
 
     <button type="submit">Registrar</button>
