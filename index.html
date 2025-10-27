@@ -51,6 +51,13 @@
     </div>
 
     <div>
+      <label for="tipo_registro">Datos del Registro<span aria-hidden="true">*</span></label>
+      <select id="tipo_registro" name="tipo_registro" style="width:100%; padding:8px;">
+        <option>Persona</option>
+        <option>Empresa</option>
+      </select>
+    </div>
+    <div>
       <label for="email">e-mail (optional)<span aria-hidden="true">*</span></label>
       <input id="email" name="email" type="email" placeholder="example@gmail.com" autocomplete="email"/>
     </div>
@@ -58,17 +65,6 @@
     <div>
       <label for="dni_cuit">DNI/CUIT/CUIL (optional)<span aria-hidden="true">*</span></label>
       <input id="dni_cuit" name="dni_cuit" type="text" placeholder="" autocomplete="cuil" />
-    </div>
-
-    <div>
-
-    <div>
-      <h3>Solo para empresas (optional)</h3>
-      <hr>
-      <div>
-        <label for="comp_email">Company e-mail (repita el mismo email de ser necesario)<span aria-hidden="true">*</span></label>
-        <input id="comp_email" name="email" type="comp_email" placeholder="example@gmail.com" autocomplete="email"/>
-      </div>
     </div>
 
     <hr>
