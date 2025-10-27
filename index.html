@@ -63,13 +63,24 @@
     <div>
       <h3>Solo para empresas</h3>
       <hr>
-      <label for="es_empresa">Es empresa<span aria-hidden="true">*</span></label>
-      <select id="es_empresa" name="es_empresa" class="form-control">
-          <option>NO</option>
-          <option>SI</option>
-      </select>
+    
+      <div style="display: flex; gap: 10px; align-items: flex-end;">
+        <div style="flex: 1;">
+          <label for="es_empresa">Es empresa<span aria-hidden="true">*</span></label>
+          <select id="es_empresa" name="es_empresa" class="form-control" style="width: 100%;">
+            <option>NO</option>
+            <option>SI</option>
+          </select>
+        </div>
+    
+        <div style="flex: 2;">
+          <label for="company_email">Company email</label>
+          <input id="company_email" name="company_email" type="email" placeholder="empresa@dominio.com" />
+        </div>
+      </div>
     </div>
 
+    <hr>
     <button type="submit">Registrar</button>
 
     <p class="note">Exclusively made for Giuseppe and my bro'</p>
